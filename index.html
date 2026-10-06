@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Un corazón azul, una canción y algo que quiero decirte.">
+<title>Para ti 💙</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E💙%3C/text%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#000;color:#eaf5ff;font-family:Arial,sans-serif}body{overflow:hidden}main{height:100%;height:100dvh;position:relative;display:grid;place-items:center}canvas{width:100%;height:100%;display:block}button{font:inherit;font-size:16px;color:#cceaff;background:#061727;border:1px solid #297bb5;border-radius:999px;padding:14px 24px;cursor:pointer;min-height:48px}button:hover{background:#0a2944}button:focus-visible{outline:3px solid #fff;outline-offset:5px}.intro{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;background:#000;z-index:2;transition:opacity .6s}.intro[hidden]{display:none}.symbol{font-size:54px;filter:drop-shadow(0 0 28px #148dff)}h1{font-family:Georgia,serif;font-weight:normal;font-size:32px;margin:0}.controls{position:absolute;bottom:max(24px,env(safe-area-inset-bottom));display:flex;gap:12px}.controls[hidden]{display:none}.controls button{background:#000a;font-size:14px;padding:12px 18px}.status{position:absolute;bottom:92px;left:20px;right:20px;text-align:center;color:#a6cce6;font-size:14px} 
+</style>
+</head>
+<body>
+<main>
+<canvas id="heart" role="img" aria-label="Un corazón azul animado formado por las palabras Love You"></canvas>
+<section class="intro" id="intro"><span class="symbol" aria-hidden="true">💙</span><h1>Para ti</h1><button id="start">Abrir mi corazón</button></section>
+<div class="controls" id="controls" hidden><button id="sound" aria-pressed="false">Silenciar</button><button id="replay">Volver a verlo</button></div>
+<p class="status" id="status" role="status"></p>
+<audio id="music" src="love_you.mp3" preload="auto" loop></audio>
+</main>
+<script src="heart.js"></script>
+</body>
+</html>
